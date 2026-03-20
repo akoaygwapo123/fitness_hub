@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Hub - Workout Videos</title>
+    <style>
+        body { 
+          background-color: black; 
+          color: white; 
+          font-family: Arial, sans-serif; 
+          margin: 0; 
+          text-align: center; 
+        }
+        nav { 
+          background-color: #FF9900; 
+          padding: 15px; 
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+        nav a { 
+          color: black; 
+          margin: 0 10px; 
+          text-decoration: none; 
+          font-weight: bold; 
+        }
+        nav a:hover {
+          color: white;
+        }
+        
+        /* Container for each video section */
+        .video-section {
+          padding: 60px 20px;
+          border-bottom: 1px solid #333;
+        }
+
+        h2 { 
+          color: #FF9900; 
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        video { 
+          border: 3px solid #FF9900; 
+          margin-top: 15px; 
+          width: 50%; 
+          border-radius: 10px;
+          box-shadow: 0px 0px 15px rgba(255, 153, 0, 0.3);
+        }
+
+        p {
+          color: #ccc;
+          margin-top: 10px;
+        }
+
+        footer {
+          padding: 40px;
+          color: #666;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a> 
+        <a href="audio.html">Audio</a> 
+        <a href="training.html">Training</a>
+        <a href="team.html">Team</a> 
+        <a href="registration.html">Register</a> 
+        <a href="tips.html">Tips</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h1 style="margin-top: 40px; color: #FF9900;">Video Training Library</h1>
+    <p>Select a category from the Gallery to see specific demonstrations.</p>
+
+    <div id="chest" class="video-section">
+        <h2>Chest Workout</h2>
+        <video controls>
+            <source src="videos/chest1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Target: Pectoralis Major and Minor</p>
+    </div>
+
+    <div id="shoulders" class="video-section">
+        <h2>Shoulder Workout</h2>
+        <video controls>
+            <source src="videos/shoulder.mp4" type="video/mp4">
+        </video>
+        <p>Target: Deltoids and Traps</p>
+    </div>
+
+    <div id="triceps" class="video-section">
+        <h2>Tricep Workout</h2>
+        <video controls>
+            <source src="videos/triceps.mp4" type="video/mp4">
+        </video>
+        <p>Target: Triceps Brachii</p>
+    </div>
+
+    <div id="back" class="video-section">
+        <h2>Back Workout</h2>
+        <video controls>
+            <source src="videos/back.mp4" type="video/mp4">
+        </video>
+        <p>Target: Latissimus Dorsi and Rhomboids</p>
+    </div>
+
+    <div id="biceps" class="video-section">
+        <h2>Bicep Workout</h2>
+        <video controls>
+            <source src="videos/biceps.mp4" type="video/mp4">
+        </video>
+        <p>Target: Biceps Brachii</p>
+    </div>
+
+    <div id="legs" class="video-section">
+        <h2>Leg Workout</h2>
+        <video controls>
+            <source src="videos/legs.mp4" type="video/mp4">
+        </video>
+        <p>Target: Quadriceps, Hamstrings, and Calves</p>
+    </div>
+
+    <div id="abs" class="video-section">
+        <h2>Abs & Core Workout</h2>
+        <video controls>
+            <source src="videos/abs.mp4" type="video/mp4">
+        </video>
+        <p>Target: Rectus Abdominis and Obliques</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Student Fitness Hub | Cagayan State University Project</p>
+    </footer>
+</body>
+</html>

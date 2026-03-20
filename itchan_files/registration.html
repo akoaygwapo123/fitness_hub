@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Hub - Registration</title>
+    <style>
+        body { 
+            background-color: black; 
+            color: white; 
+            font-family: 'Segoe UI', Arial, sans-serif; 
+            margin: 0; 
+        }
+        nav { 
+            background-color: #FF9900; 
+            padding: 15px; 
+            text-align: center; 
+        }
+        nav a { 
+            color: black; 
+            margin: 0 10px; 
+            text-decoration: none; 
+            font-weight: bold; 
+        }
+        .form-container {
+            width: 40%; 
+            margin: 50px auto; 
+            border: 2px solid #FF9900; 
+            padding: 30px; 
+            border-radius: 15px; 
+            background-color: #111;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            color: #FF9900;
+            font-weight: bold;
+        }
+        input, select { 
+            width: 100%; 
+            margin-top: 5px;
+            padding: 12px; 
+            background-color: #222;
+            border: 1px solid #444;
+            color: white;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] { 
+            background: #FF9900; 
+            color: black;
+            font-weight: bold; 
+            cursor: pointer; 
+            border: none; 
+            margin-top: 25px;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover { 
+            background: white; 
+            color: #FF9900; 
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a> 
+        <a href="audio.html">Audio</a> 
+        <a href="training.html">Training</a>
+        <a href="team.html">Team</a> 
+        <a href="registration.html">Register</a> 
+        <a href="tips.html">Tips</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="form-container">
+        <h2 style="text-align: center; color: #FF9900;">START YOUR JOURNEY</h2>
+        <form action="success.html">
+            <label>Full Name</label>
+            <input type="text",required>
+            
+            <label>Email Address</label>
+            <input type="email" required>
+            
+            <label>Birthdate</label>
+            <input type="date" required>
+            
+            <label>Plan</label>
+            <select>
+                <option>Monthly Access</option>
+                <option>Weekly Access</option>
+            </select>
+            
+            <div style="margin-top: 15px;">
+                <label style="display:inline;">Gender:</label> &nbsp;
+                <input type="radio" name="g" style="width:auto;" required> Male &nbsp;
+                <input type="radio" name="g" style="width:auto;" required> Female
+            </div>
+
+            <input type="submit" value="REGISTER NOW">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Hub - Training Tracks</title>
+    <style>
+        body { 
+          background-color: black; 
+          color: white; 
+          font-family: 'Segoe UI', Arial, sans-serif; 
+          margin: 0; 
+          text-align: center; 
+        }
+
+        nav { 
+          background-color: #FF9900; 
+          padding: 15px; 
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+
+        nav a { 
+          color: black; 
+          margin: 0 10px; 
+          text-decoration: none; 
+          font-weight: bold; 
+        }
+
+        nav a:hover { color: white; }
+
+        .label-text {
+            color: #FF9900;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .training-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 20px;
+        }
+
+        .track-card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 15px;
+            width: 300px;
+            padding: 30px;
+            transition: 0.3s;
+            text-align: left;
+        }
+
+        .track-card:hover {
+            border-color: #FF9900;
+            transform: scale(1.03);
+        }
+
+        .track-card h3 {
+            color: #FF9900;
+            margin-top: 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .track-card p {
+            font-size: 0.9em;
+            color: #ccc;
+            line-height: 1.6;
+        }
+
+        .btn-track {
+            display: inline-block;
+            margin-top: 15px;
+            color: #FF9900;
+            text-decoration: none;
+            font-size: 0.8em;
+            font-weight: bold;
+            border-bottom: 1px solid #FF9900;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a> 
+        <a href="audio.html">Audio</a> 
+        <a href="training.html">Training</a>
+        <a href="team.html">Team</a> 
+        <a href="registration.html">Register</a> 
+        <a href="tips.html">Tips</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2 style="color: #FF9900; margin-top: 50px; font-size: 2.5em;">CHOOSE YOUR PATH</h2>
+    <p>Select the discipline that fits your transformation goals.</p>
+
+    <div class="training-container">
+        <div class="track-card">
+            <h3>Strength & Power</h3>
+            <p><span class="label-text">Goal:</span> Build muscle and increase raw lifting capacity.</p>
+            <p>Perfect for those looking to change their physical presence and master the heavy iron.</p>
+            <a href="registration.html" class="btn-track">START THIS TRACK</a>
+        </div>
+
+        <div class="track-card">
+            <h3>HIIT & Cardio</h3>
+            <p><span class="label-text">Goal:</span> Extreme fat loss and high-speed endurance.</p>
+            <p>Fast-paced sessions designed for busy students who need to burn calories in 30 minutes or less.</p>
+            <a href="registration.html" class="btn-track">START THIS TRACK</a>
+        </div>
+
+        <div class="track-card">
+            <h3>Mobility Flow</h3>
+            <p><span class="label-text">Goal:</span> Flexibility and mental recovery.</p>
+            <p>Focus on posture and joint health. Ideal for staying loose during long study hours and exam weeks.</p>
+            <a href="registration.html" class="btn-track">START THIS TRACK</a>
+        </div>
+    </div>
+</body>
+</html>

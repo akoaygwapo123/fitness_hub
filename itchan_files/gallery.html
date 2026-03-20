@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Hub - Exercise Gallery</title>
+    <style>
+        body { 
+          background-color: black; 
+          color: white; 
+          font-family: Arial, sans-serif; 
+          margin: 0; 
+          text-align: center; 
+        }
+        nav { 
+          background-color: #FF9900; 
+          padding: 15px; 
+        }
+        nav a { 
+          color: black; 
+          margin: 0 10px; 
+          text-decoration: none; 
+          font-weight: bold; 
+        }
+        nav a:hover {
+          color: white;
+        }
+        
+        /* Container for the muscle group grid */
+        .gallery-container { 
+          padding: 20px; 
+          display: flex; 
+          flex-wrap: wrap; 
+          justify-content: center; 
+        }
+
+        /* Styling for the clickable card */
+        .exercise-link {
+          text-decoration: none;
+          color: white;
+          margin: 15px;
+          transition: transform 0.3s;
+        }
+
+        .exercise-link:hover {
+          transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        .exercise-link img { 
+          width: 300px; 
+          height: 200px; 
+          border: 2px solid #FF9900; 
+          padding: 5px; 
+          border-radius: 10px;
+          display: block;
+        }
+
+        .muscle-label {
+          margin-top: 10px;
+          font-weight: bold;
+          color: #FF9900;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a> 
+        <a href="audio.html">Audio</a> 
+        <a href="training.html">Training</a>
+        <a href="team.html">Team</a> 
+        <a href="registration.html">Register</a> 
+        <a href="tips.html">Tips</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <h2 style="color: #FF9900; margin-top: 30px;">Target Muscle Groups</h2>
+    <p>Click a muscle group to watch the workout video guide.</p>
+
+    <div class="gallery-container">
+        <a href="videos.html#chest" class="exercise-link">
+            <img src="images/chest1.jpg" alt="Chest Exercises">
+            <div class="muscle-label">Chest</div>
+        </a>
+
+        <a href="videos.html#shoulders" class="exercise-link">
+            <img src="images/shoulder.jpg" alt="Shoulder Exercises">
+            <div class="muscle-label">Shoulders</div>
+        </a>
+
+        <a href="videos.html#triceps" class="exercise-link">
+            <img src="images/triceps.jpg" alt="Tricep Exercises">
+            <div class="muscle-label">Triceps</div>
+        </a>
+
+        <a href="videos.html#back" class="exercise-link">
+            <img src="images/back.jpg" alt="Back Exercises">
+            <div class="muscle-label">Back</div>
+        </a>
+
+        <a href="videos.html#biceps" class="exercise-link">
+            <img src="images/biceps.jpg" alt="Bicep Exercises">
+            <div class="muscle-label">Biceps</div>
+        </a>
+
+        <a href="videos.html#legs" class="exercise-link">
+            <img src="images/legs.jpg" alt="Leg Exercises">
+            <div class="muscle-label">Legs</div>
+        </a>
+
+        <a href="videos.html#abs" class="exercise-link">
+            <img src="images/core_abs.jpg" alt="Abs Exercises">
+            <div class="muscle-label">Abs</div>
+        </a>
+    </div>
+
+    <footer style="margin-top: 50px; padding: 20px; border-top: 1px solid #FF9900; color: #FF9900;">
+        <p>&copy; 2026 Student Fitness Hub | Midterm Project</p>
+    </footer>
+</body>
+</html>

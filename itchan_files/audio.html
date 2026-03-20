@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fitness Hub - Audio Experience</title>
+    <style>
+        body { 
+          background-color: black; 
+          color: white; 
+          font-family: 'Segoe UI', Arial, sans-serif; 
+          margin: 0; 
+          text-align: center; 
+        }
+        nav { 
+          background-color: #FF9900; 
+          padding: 15px; 
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+        }
+        nav a { 
+          color: black; 
+          margin: 0 10px; 
+          text-decoration: none; 
+          font-weight: bold; 
+        }
+        nav a:hover { color: white; }
+
+        /* Container para sa bawat main category (Motivation at Music) */
+        .audio-section {
+          padding: 50px 20px;
+        }
+
+        .section-title {
+          color: #FF9900;
+          font-size: 2em;
+          margin-bottom: 10px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+
+        .section-desc {
+          max-width: 800px;
+          margin: 0 auto 30px auto;
+          color: #bbb;
+          line-height: 1.6;
+        }
+
+        /* Horizontal Layout for Audio Cards */
+        .horizontal-scroll {
+          display: flex;
+          flex-wrap: wrap; /* Gagawin itong 2 rows kung maliit ang screen, o 1 row kung malapad */
+          justify-content: center;
+          gap: 20px;
+        }
+
+        /* Individual Card Styling */
+        .audio-card {
+          background: #111;
+          border: 1px solid #333;
+          border-radius: 15px;
+          padding: 20px;
+          width: 280px;
+          transition: 0.4s;
+          text-align: center;
+        }
+
+        .audio-card:hover {
+          border-color: #FF9900;
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(255, 153, 0, 0.2);
+        }
+
+        /* Album Cover Styling */
+        .album-cover {
+          width: 100%;
+          height: 200px;
+          object-fit: cover; /* Para hindi ma-stretch ang image */
+          border-radius: 10px;
+          margin-bottom: 15px;
+          border: 1px solid #222;
+        }
+
+        .track-name {
+          color: #FF9900;
+          font-weight: bold;
+          margin-bottom: 10px;
+          display: block;
+        }
+
+        audio {
+          width: 100%;
+          height: 35px; /* Ginawang mas manipis para magkasya */
+          filter: invert(100%) hue-rotate(180deg) brightness(1.5); /* Ginagawang orange/dark theme ang player */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a> 
+        <a href="about.html">About</a> 
+        <a href="gallery.html">Gallery</a>
+        <a href="videos.html">Videos</a> 
+        <a href="audio.html">Audio</a> 
+        <a href="training.html">Training</a>
+        <a href="team.html">Team</a> 
+        <a href="registration.html">Register</a> 
+        <a href="tips.html">Tips</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="audio-section">
+        <h2 class="section-title">Daily Discipline</h2>
+        <p class="section-desc">The only person you should try to be better than is the person you were yesterday. These tracks are designed to build the mindset of a champion before your first class starts.</p>
+        
+        <div class="horizontal-scroll">
+            <div class="audio-card">
+                <img src="images/cover.jpg" alt="img" class="album-cover">
+                <span class="track-name">Start Now!</span>
+                <audio controls><source src="audio/audio1.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <img src="images/img1.jpg" alt="img1" class="album-cover">
+                <span class="track-name">You vs You</span>
+                <audio controls><source src="audio/audio2.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <img src="images/img2.jpg" alt="image2" class="album-cover">
+                <span class="track-name">No Excuses</span>
+                <audio controls><source src="audio/audio3.mp3" type="audio/mpeg"></audio>
+            </div>
+            <div class="audio-card">
+                <img src="images/cover1.jpg" alt="img3" class="album-cover">
+                <span class="track-name">Consistency</span>
+                <audio controls><source src="audio/audio4.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+    </div>
+
+    <div class="audio-section" style="background-color: #050505;">
+        <h2 class="section-title">Main Character Energy</h2>
+        <p class="section-desc">POV: You are the star of your own cinematic transformation. Walk into the gym like the cameras are rolling. Your best version is loading.</p>
+        
+        <div class="horizontal-scroll">
+            <div class="audio-card">
+                <img src="images/img5.jpg" alt="img5" class="album-cover">
+                <span class="track-name">Where Have You Been</span>
+                <audio controls><source src="audio/music1.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="audio-card">
+                <img src="images/img8.png" alt="img8" class="album-cover">
+                <span class="track-name">You and Me</span>
+                <audio controls><source src="audio/music2.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="audio-card">
+                <img src="images/img6.png" alt="img6" class="album-cover">
+                <span class="track-name">Me, MySelf, and I</span>
+                <audio controls><source src="audio/music3.mp3" type="audio/mpeg"></audio>
+            </div>
+
+            <div class="audio-card">
+                <img src="images/img4.jpg" alt="img4" class="album-cover">
+                <span class="track-name">Judas</span>
+                <audio controls><source src="audio/music4.mp3" type="audio/mpeg"></audio>
+            </div>
+        </div>
+    </div>
+
+    <footer style="padding: 40px; color: #444; border-top: 1px solid #111;">
+        &copy; 2026 Student Fitness Hub | Cinematic Experience
+    </footer>
+</body>
+</html>
